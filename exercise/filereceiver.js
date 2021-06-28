@@ -9,8 +9,6 @@ client.on("connect", function () {
 });
 
 client.on("message", function (topic, message) {
-  console.log(message.toString());
-  // data = JSON.parse(message);
-  // fs.writeFileSync(data.name, data.data);
+  console.log(message.toString() + topic);
   console.log("messgae on");
 });
