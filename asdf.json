@@ -1,0 +1,18 @@
+{
+    "main": {
+        "Hour1": 1.0,
+        "Hour2": 1.0,
+        "Hour3": 1.0,
+        "Hour4": 1.0,
+        "Hour5": 1.0,
+        "Hour6": 1.0,
+        "Hour7": 1.0,
+        "Hour8": 1.0,
+        "Hour9": 1.0,
+        "Hour10": 1.0,
+        "Hour11": 1.0,
+        "Hour12": 1.0
+    },
+    "possible": 1,
+    "type" : "Default"
+}
