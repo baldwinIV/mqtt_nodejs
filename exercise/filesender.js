@@ -19,6 +19,7 @@ var tosend = {
   possible: 1,
   type: "temp",
 };
+var parameter = 0;
 //tosend는 보내고 싶은 객체입니다. 
 var jsonData = JSON.stringify(tosend);
 server.on("connect", function () {
@@ -26,6 +27,8 @@ server.on("connect", function () {
   server.publish("send", jsonData);
   var myTimer = setInterval(function () {
     var jsonData = JSON.stringify(tosend);
+    tosend.main.Hour1 += parameter;
+    parameter *= -1;
     server.publish("24hours_data_answer",jsonData);
     //1패러미터의 topic으로 tosend를 문자열화 한 jsonData를 pub합니다.
     console.log(jsonData);
